@@ -1,0 +1,250 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  background: rgb(174, 229, 241);
+  
+}
+* {
+  box-sizing: border-box;
+}
+.quiz_name{
+  background-color:#1D58C9;
+  max-width: 632px;
+  color: #FFF;
+}
+
+.score{
+  display: inline-block;
+  font-weight: bold;
+  padding: 5px 0 5px 20px;
+}
+
+.wrongScore{
+  font-weight: bold;
+  padding: 5px 20px 5px 0px;
+  float: right;
+}
+.container{
+  max-width:632px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+}
+.banner{
+     width: 100%;
+     background-image: url("https://cnet4.cbsistatic.com/img/uh_tdX9PxbhKwFTbGy2kfrhhRv4=/2017/10/04/6290a252-4a8e-43d0-b469-ad36987c4c2a/bobsburgerscrop.jpg");
+     background-size: cover;
+     height: 300px;
+     background-position: center;
+  }
+main{
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 13px;
+
+}
+
+.inner-container{
+  width: 100%;
+  padding: 20px;
+
+}
+
+.logo {
+  max-width: 600px;
+
+}
+
+.logo img{
+  width: 100%;
+  float: left;
+  margin: 20px 5px 20px 5px;
+}
+
+.center_Text{
+  margin: 5px;
+  text-align: center;
+  width: 100%;
+}
+.cur_quest{
+  padding-top: 5px;
+  padding-bottom: 10px;
+  font-size: 5vw;
+  text-align: center;
+  width: 100%;
+}
+.btnBox{
+  width: 100%;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.startBtn
+  {
+        background-color:#1D58C9;
+        color: #FFF;
+        padding: 10px;
+        border:none;
+        border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        margin:0 auto;
+        width: 100%;
+        height: 100%;
+        font-size: 10vw;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+.nextQuestion{
+  width: 100%;
+  height: 50px;
+  margin-left: auto;
+  margin-top: 25px;
+  margin-right: auto;
+  text-align: center;
+  border: none;
+  color: #FFF;
+  background-color:#1D58C9;
+  border-radius: 5px;
+  font-size: large;
+}
+fieldset{
+  border: none;
+}
+legend{
+  text-align: center;
+}
+
+button:focus {
+    outline: none !important;
+    border:3px solid red;
+    box-shadow: 0 0 10px #719ECE;
+}
+.check_answer{
+  text-align: center;
+  text-transform: uppercase;
+}
+.corrected{
+  text-align: center;
+  color: #b50000;
+  font-weight: bold;
+}
+
+.restart{
+  width: 100%;
+  height: 50px;
+  margin-left: auto;
+  margin-top: 25px;
+  margin-right: auto;
+  text-align: center;
+  border: none;
+  color: #FFF;
+  background-color:#1D58C9;
+  border-radius: 5px;
+  font-size: 5vw;
+  text-transform: uppercase;
+}
+
+.js-answer_btn{
+    border: 4px solid #1D58C9;
+    border-radius: 10px;
+    background: none;
+    height: 100%;
+    width: 100%;
+    font-size: 5vw;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 auto;
+    }
+
+.btnContainer {
+  display: inline-block;
+  height: 100px;
+  width: 200px;
+  text-align: center;
+  margin: 10px;
+}
+p {
+  margin-left:auto;
+  margin-right: auto;
+}
+
+footer p{
+  text-align: center;
+  font-size: 14px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  }
+
+  /**************************************************************/
+  /*Grid Styling*/
+
+
+.row {
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+/* Clearfix */
+.row::before,
+.row::after {
+  display: table;
+  content: '';
+}
+
+.row::after {
+  clear: both;
+}
+
+.col-3, .col-4, .col-6, .col-12 {
+  float: left;
+  padding-left: 1.04166666%;
+  padding-right: 1.04166666%;
+  text-align: center;
+}
+
+/* Mobile defaults */
+.col-3, .col-4, .col-6, .col-12 {
+  width: 100%;
+}
+
+
+/* Non-mobile, grid */
+@media only screen and (min-width: 640px) {
+  /* 3 columns, 3/12 in % */
+  .col-3 {
+    width: 25%;
+  }
+
+  /* 4 columns */
+  .col-4 {
+    width: 33.33%;
+  }
+
+  /* 6 columns */
+  .col-6 {
+    width: 50%;
+  }
+
+}
+
+[class*='col-'] {
+  float: left;
+  padding-left: 1.04%;
+  padding-right: 1.04%;
+}
+@media screen and (min-width: 320px) {
+  .js-answer_btn {
+    font-size: 16px;
+  }
+  .cur_quest{
+    font-size: 24px;
+  }
+  .startBtn{
+    font-size: 30px;
+  }
+  .restart{
+    font-size: 24px;
+  }
+}
